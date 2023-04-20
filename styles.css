@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
+  margin-left: 20% ;
+}
+
+.button-container  {
+   display: flex;
+   justify-content: center;
+   padding: 0.2%; 
+   border-radius: 1%; 
+   background-color: #ddd;
+   color: #333;
+   font-size: 100%; 
+   cursor: pointer;
+
+}
+
+
+
+/*@media screen and (max-width: 1366px) {
+  .wrapper {
+    padding: 0 1%; 
+  }
+  
+  .button-container {
+    flex-direction: row;
+    align-items: center;
+     width: 100%;
+    height: auto;
+      padding: 10%; 
+   border-radius: 1%; 
+  }
+  
+  .button-container  {
+    margin: 0.625% 0; 
+  }
+  
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+
+   #violin-area {
+    coords: 10%, 500%, 90%, 350%;
+    display: block;
+  }
+}*/
+
+/*@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .wrapper {
+    padding: 0 1%;
+  }
+  
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-container {
+     margin: 0.625% 0; 
+  }
+  
+  .button-container button {
+    width: 100%;
+    height: auto;
+  }
+}*/
+
+
+    .play-button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 40px;
+     width: 140px;
+     background-color: rgba(5, 85, 34, 0.8);
+     color: #ffffff;
+     border-radius: 0.5em;
+     cursor: pointer;
+    }
+
+    .play-button:hover {
+     background-color: rgba(6, 119, 47, 0.8);
+     color: white;
+    }
+
+    .pause {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 40px;
+     width: 120px;
+     background-color: rgba(225, 0, 0, 5);
+     color: #ffffff;
+     border-radius: 0.5em;
+     cursor: pointer;
+    }
+
+    .pause:hover {
+     background-color: rgba(255, 0, 0, 5);
+     color: #ffffff;
+    }
+
+
+  /* Modal styles */
+    #myModal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+  .modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 3%;
+    border: 1px solid #888;
+    width: 35%;
+    }
+    
+    .close {
+      color: rgb(104, 97, 97);
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red ;
+      text-decoration: none;
+      cursor: pointer;
+    }
+

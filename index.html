@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Sound Machine</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+     <!-- Modal -->
+     <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="modal-iframe" width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+   <div class="wrapper">
+      <img class="image-container"  src="max.png" usemap="#image-map" alt="Image with Image Map">
+      <h1 style="color: darkred;"> Click on the instruments to watch the music videos</h1>
+      <div class="button-container">   
+        <button class="play-button" onclick="playAudio('violin.mp3')" type="button">Violin audio.mp3</button>
+        <button class="play-button" onclick="playAudio('viola.mp3')" type="button">Viola audio.mp3</button>
+        <button class="play-button" onclick="playAudio('guitar.mp3')" type="button">Guitar audio.mp3</button>
+        <button class="play-button" onclick="playAudio('2cellos.mp3')" type="button">Cello audio.mp3</button>
+        <button class="play-button" onclick="playAudio('harp.mp3')" type="button">Harp audio.mp3</button>
+        <button class="pause" onclick="playAudio()" type="button">Pause Audio</button>
+        <button class="play-button" onclick="playAudio('bass.mp3')" type="button">Bass audio.mp3</button>
+        </div>
+    </div>
+
+
+
+<audio id="myAudio">
+  <source src="violin.mp3" type="audio/mpeg">
+  <source src="viola.mp3" type="audio/mpeg">
+  <source src="guitar.mp3" type="audio/mpeg">
+  <source src="2cellos.mp3" type="audio/mpeg">
+  <source src="harp.mp3" type="audio/mpeg">
+  <source src="bass.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+<map name="image-map">
+    <area id="violin-area"
+     target="_self" 
+     alt="Violin"
+     title="violin"
+     href="https://www.youtube.com/embed/dsU9zmnZ37g" 
+     coords="14,454,77,343" 
+     shape="rect">
+
+    <area id="viola-area"
+     target="_self"
+     alt="viola"
+     title="viola" 
+     href="https://www.youtube.com/embed/OUbktXzOuYU"
+     coords="126,449,183,343" 
+     shape="rect">
+
+    <area id="guitar-area" 
+     target="_self"
+     alt="guitar" 
+     title="guitar" 
+     href="https://www.youtube.com/embed/KHiRXusjvmk"
+     coords="255,443,354,235" 
+     shape="rect">
+
+     <area id="cello-area"
+     target="_self" 
+     alt="cello"
+     title="cello"
+     href="https://www.youtube.com/embed/qpbX7SbXOtU"
+     coords="417,451,541,189" 
+     shape="rect">
+
+     <area id="harp-area"
+     target="_self" 
+     alt="harp"
+     title="harp"
+     href="https://www.youtube.com/embed/_2Qj5lrqqAQ"
+     coords="568,448,752,70" 
+     shape="rect">
+
+     <area id="bass-area"
+     target="_self"
+     alt="bass" 
+     title="bass"
+     href="https://www.youtube.com/embed/J60xh7ZBeyw"
+     coords="797,447,960,46" 
+     shape="rect">
+</map>
+
+ <script src="script.js"></script>
+
+
+
+<script>
+function playAudio(src) {
+  var audio = document.getElementById("myAudio");
+  audio.src = src;
+  audio.play();
+}
+
+function pauseAudio() {
+  var audio = document.getElementById("myAudio");
+  audio.pause();
+}
+</script>
+
+
+</body>
+</html>
