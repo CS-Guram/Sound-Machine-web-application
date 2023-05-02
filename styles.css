@@ -23,58 +23,7 @@
    color: #333;
    font-size: 100%; 
    cursor: pointer;
-
 }
-
-
-
-/*@media screen and (max-width: 1366px) {
-  .wrapper {
-    padding: 0 1%; 
-  }
-  
-  .button-container {
-    flex-direction: row;
-    align-items: center;
-     width: 100%;
-    height: auto;
-      padding: 10%; 
-   border-radius: 1%; 
-  }
-  
-  .button-container  {
-    margin: 0.625% 0; 
-  }
-  
-  .image-container {
-    width: 100%;
-    height: auto;
-  }
-
-   #violin-area {
-    coords: 10%, 500%, 90%, 350%;
-    display: block;
-  }
-}*/
-
-/*@media only screen and (min-width: 375px) and (max-width: 767px) {
-  .wrapper {
-    padding: 0 1%;
-  }
-  
-  .button-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .button-container {
-     margin: 0.625% 0; 
-  }
-  
-  .button-container button {
-    width: 100%;
-    height: auto;
-  }
-}*/
 
 
     .play-button {
